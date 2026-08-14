@@ -1,0 +1,31 @@
+-- current_schema.sql
+--
+-- Canonical, current-state schema for the DiscordTextRPG database.
+-- This file is a REFERENCE snapshot of what the schema should look like
+-- after all migrations in database/migrations/ have been applied.
+--
+-- Do not hand-edit this file to change the live schema — add a new
+-- numbered migration in database/migrations/ instead, then regenerate
+-- this file to match.
+--
+-- Status: NOT YET IMPLEMENTED (Phase 1).
+
+PRAGMA foreign_keys = ON;
+
+-- Example shape only — replace with the real Phase 1 players table
+-- once models/player.py fields are finalized.
+--
+-- CREATE TABLE IF NOT EXISTS players (
+--     discord_id      INTEGER PRIMARY KEY,
+--     name            TEXT NOT NULL,
+--     level           INTEGER NOT NULL DEFAULT 1,
+--     xp              INTEGER NOT NULL DEFAULT 0,
+--     hp              INTEGER NOT NULL,
+--     max_hp          INTEGER NOT NULL,
+--     attack          INTEGER NOT NULL,
+--     defense         INTEGER NOT NULL,
+--     gold            INTEGER NOT NULL DEFAULT 0,
+--     created_at       TEXT NOT NULL DEFAULT (datetime('now')),
+--     CHECK (gold >= 0),
+--     CHECK (hp >= 0)
+-- );

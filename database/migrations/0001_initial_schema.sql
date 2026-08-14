@@ -1,0 +1,8 @@
+-- 0001_initial_schema.sql
+--
+-- First migration. Applied once by migration_runner.py and tracked in
+-- the schema_migrations table so it is never re-applied.
+--
+-- Status: NOT YET IMPLEMENTED (Phase 1). Fill this in alongside
+-- database/schema/current_schema.sql — the two should always match
+-- after this migration is the only one applied.
