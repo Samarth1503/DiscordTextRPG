@@ -1,0 +1,60 @@
+# Environment & secret configuration
+.env
+.env.*
+!.env.example
+
+# Databases & SQLite storage
+*.db
+*.db-journal
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+storage/*.db
+storage/*.db-journal
+storage/*.db-shm
+storage/*.db-wal
+storage/*.sqlite
+storage/*.sqlite3
+!storage/.gitkeep
+
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Testing & Quality Tools
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.nox/
+.tox/
+
+# IDEs & Code Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# Logs & Temporary Files
+*.log
+logs/
+tmp/
+scratch/

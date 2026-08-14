@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "discordtextrpg"
+version = "0.1.0"
+description = "A persistent text-based RPG Discord bot."
+requires-python = ">=3.11"
+dependencies = [
+    "discord.py>=2.3,<3",
+    "python-dotenv>=1.0,<2",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8,<9",
+    "flake8>=7,<8",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_functions = ["test_*"]
+
+[tool.flake8]
+max-line-length = 88
+exclude = [
+    ".git",
+    ".venv",
+    "venv",
+    "__pycache__",
+]
+
+[tool.black]
+line-length = 88
+target-version = ["py311"]
