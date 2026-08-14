@@ -25,20 +25,32 @@ A persistent, text-based Discord RPG bot built with Python, discord.py, and SQLi
 
 
 DiscordTextRPG/
-├── cogs/            # Discord Cogs (adventure, combat, general, inventory, player, quests, shop)
-├── config/          # Bot configuration and environment settings
-├── data/            # Static game registries (items, enemies, quests)
-├── database/        # SQLite connection, schema initializers, migrations, repositories, and UOW
-├── game/            # Core business logic (combat engine, exploration, economy, leveling, rewards)
-├── models/          # Data models and dataclasses (player, item, equipment, quest, enemy)
-├── storage/         # Local SQLite database files (ignored by Git)
-├── tests/           # Unit and integration test suites
-├── ui/              # Discord UI Views and button components
-├── utils/           # Helper functions, embeds, checks, and formatters
-├── bot.py           # Application entry point and Cog loader
-├── pyproject.toml   # Project metadata and tool configuration
-└── requirements.txt # Python dependencies
 
+├── cogs/
+
+├── config/
+
+├── data/
+
+├── database/
+
+├── game/
+
+├── models/
+
+├── storage/
+
+├── tests/
+
+├── ui/
+
+├── utils/
+
+├── bot.py
+
+├── pyproject.toml
+
+└── requirements.txt
 
 ## Local Development
 
@@ -66,11 +78,9 @@ For complete local environment setup instructions, virtual environment configura
 
 ## Environment Variables
 
-| --------------- | ----------------------------------------------- | -------- |
 |     Variable    |                   Description                   | Required |
 | --------------- | ----------------------------------------------- | -------- |
 | `DISCORD_TOKEN` | Discord Bot Token from Discord Developer Portal |   Yes    |
-| --------------- | ----------------------------------------------- | -------- |
 
 ## Git & Security Notes
 
